@@ -1,0 +1,43 @@
+Django RestFramework
+
+One to one- - one record of a table is linked to one record of another table (One Person can have One Citezenship)
+One to many -  one record of a table is linked to many record of another table (One Class can have many Students)
+Many to many - many record of a table can be related to many records of another table (One Book have have many Authors and One Author can write many Books)
+
+RMS(Restaurant Management System)
+Database Design
+
+User
+	id
+	name
+	type
+	email
+	phone_number
+	image
+
+category
+	id(auto field)[Primary Key]
+	name(eg: drink, breakfast, lunch) (String)
+
+Food
+	id
+	name {Coke, fanta, sprite}
+	price
+	category_id[Foreign Key] (1)[1 to many]
+	
+Table
+	id
+	number(int/char)
+	available(Boolean field)
+
+Order_Food
+	order_id [one to one]
+	food_id [one to many]
+
+Order
+	id
+	user_id[Foreign Key] [1 to many]
+	total_price
+	status(Pending, Complete)
+	payment_status(Boolean)
+	

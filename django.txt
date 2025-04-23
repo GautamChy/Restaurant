@@ -1,0 +1,94 @@
+# install virtualenv
+pip3 install virtualenv (For Mac)
+
+#create virtualenv
+virtualenv env
+python -m venv env
+
+#activate virtualenv
+env\Scripts\activate (For window)
+source env/bin/activate (For Mac/linux)
+
+#install django
+pip install django (for Mac)
+
+# start project 
+django-admin startproject project_name . (. is optional)
+
+# To show package ,it used when package install example startproject is a package.
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+#create app
+python3 manage.py startapp app_name
+
+# initialise git
+git init
+
+# add git
+git add .
+
+# git commit 
+git commit -m "message"
+
+# migration file
+python3 manage.py makemigrations  [Note = makemigrations ley matra models lai herxa aru lai herdina like views.py,admin.py][migrations garnu vanda pahila app_name chahee project ko Installed APP vitra  app_name put garney]
+
+# Implement changes to Database or To show on db.sqlite3
+python3 manage.py migrate
+
+# create gitignore file
+.gitignore
+
+# .env install (serach on google python-dotenv)
+pip install python-dotenv
+
+# To show package ,it used when package install [.env is a package so it used again]
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+# Run django server
+python3 manage.py runserver
+
+# open python shell
+python3 manage.py shell 
+
+# for import the Model name
+from base.models import Model_name  # here model name is todolist
+
+# show all the data of a model/table
+Model_name.objects.all()
+
+# create data in a model/table
+Model_name.objects.create(field1='value1',field2='value2')
+
+# show value of the data of a model/table 
+Model_name.objects.values()
+
+# fetch single data
+a = Model_name.objects.get(id = 1)
+print(a.title)
+
+# Update data
+a.field1 = 'new_value'
+a.save()
+
+# Delete
+a.delete()
+
+# filter data
+Model_name.objects.filter(field1='value1', ......)
+
+# count the number of all data
+Model_name.objects.all().count()
+
+# count the number of specific data
+Model_name.objects.filter(is_completed = True).count()
+
+# create superuser
+python3 manage.py createsuperuser
+
+# register models in admin
+admin.site.register(todolist)
+
+
