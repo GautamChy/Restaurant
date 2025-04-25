@@ -1,0 +1,852 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-04-23T18:38:10.182Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "superuser",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-04-24T17:15:14.607Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "superuser - P",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-04-24T17:24:36.786Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "superuser - P",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Total price\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-04-24T17:25:30.095Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "superuser - P",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-04-24T17:26:59.521Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "OrderItem object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-04-24T17:27:05.038Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "OrderItem object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-04-24T18:13:50.181Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "superuser - P",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"order item\", \"object\": \"OrderItem object (2)\"}}, {\"added\": {\"name\": \"order item\", \"object\": \"OrderItem object (3)\"}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add category",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change category",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete category",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view category",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add food",
+      "content_type": 8,
+      "codename": "add_food"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change food",
+      "content_type": 8,
+      "codename": "change_food"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete food",
+      "content_type": 8,
+      "codename": "delete_food"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view food",
+      "content_type": 8,
+      "codename": "view_food"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add table",
+      "content_type": 9,
+      "codename": "add_table"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change table",
+      "content_type": 9,
+      "codename": "change_table"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete table",
+      "content_type": 9,
+      "codename": "delete_table"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view table",
+      "content_type": 9,
+      "codename": "view_table"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add order item",
+      "content_type": 10,
+      "codename": "add_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change order item",
+      "content_type": 10,
+      "codename": "change_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete order item",
+      "content_type": 10,
+      "codename": "delete_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view order item",
+      "content_type": 10,
+      "codename": "view_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add order",
+      "content_type": 11,
+      "codename": "add_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change order",
+      "content_type": 11,
+      "codename": "change_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete order",
+      "content_type": 11,
+      "codename": "delete_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view order",
+      "content_type": 11,
+      "codename": "view_order"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$p2i1msS5OpWmhmmmLbgR55$JdABpsfiXRwkVnrLg6PKZFzbJL9a6H4EgTy5/um6NFA=",
+      "last_login": "2025-04-24T09:18:33.595Z",
+      "is_superuser": true,
+      "username": "superuser",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-04-23T18:23:55Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": { "app_label": "admin", "model": "logentry" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": { "app_label": "auth", "model": "permission" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": { "app_label": "auth", "model": "group" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": { "app_label": "auth", "model": "user" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": { "app_label": "contenttypes", "model": "contenttype" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": { "app_label": "sessions", "model": "session" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": { "app_label": "rms", "model": "category" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": { "app_label": "rms", "model": "food" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": { "app_label": "rms", "model": "table" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": { "app_label": "rms", "model": "orderitem" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": { "app_label": "rms", "model": "order" }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "1wgoqx5awgp2xcq8bp41gl09ika29zme",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-sOsNJT1nsNZrgwPIkeKkQtwdIqWA9s3Me6nI61Lj2sscx6xOyqrD75ZYHqVtIN-53SYtU1vmMelN0Tvt-jLl8jzv7t9B5V6_tU8EiAbBeWEHJtgSgMpVgI11iRGCMBCIJToOjg3QgOSTAUcBRdT7A7N7Nog:1u7em6:DkYeUuJibCMDDKfejDUTU3r8-mpCPiygyyurSJAUMro",
+      "expire_date": "2025-05-07T18:24:46.678Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "9smdekwhfqjwsv47b52b8zvdkce1sa36",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-sOsNJT1nsNZrgwPIkeKkQtwdIqWA9s3Me6nI61Lj2sscx6xOyqrD75ZYHqVtIN-53SYtU1vmMelN0Tvt-jLl8jzv7t9B5V6_tU8EiAbBeWEHJtgSgMpVgI11iRGCMBCIJToOjg3QgOSTAUcBRdT7A7N7Nog:1u7sj3:QAcCXEp6RbP-M5enDunG5JyKnpFpDkxv8ZW6gmC4hv8",
+      "expire_date": "2025-05-08T09:18:33.601Z"
+    }
+  },
+  { "model": "rms.category", "pk": 1, "fields": { "name": "Veal - Knuckle" } },
+  {
+    "model": "rms.category",
+    "pk": 2,
+    "fields": { "name": "Mushroom - Crimini" }
+  },
+  { "model": "rms.category", "pk": 3, "fields": { "name": "Onions - Pearl" } },
+  {
+    "model": "rms.category",
+    "pk": 4,
+    "fields": { "name": "Hold Up Tool Storage Rack" }
+  },
+  {
+    "model": "rms.category",
+    "pk": 5,
+    "fields": { "name": "Cheese - Cheddar, Mild" }
+  },
+  { "model": "rms.category", "pk": 6, "fields": { "name": "Strawberries" } },
+  { "model": "rms.category", "pk": 7, "fields": { "name": "Juice - Mango" } },
+  {
+    "model": "rms.category",
+    "pk": 8,
+    "fields": { "name": "Salmon - Sockeye Raw" }
+  },
+  {
+    "model": "rms.category",
+    "pk": 9,
+    "fields": { "name": "Puree - Blackcurrant" }
+  },
+  {
+    "model": "rms.category",
+    "pk": 10,
+    "fields": { "name": "Mushroom - Chanterelle, Dry" }
+  },
+  {
+    "model": "rms.food",
+    "pk": 1,
+    "fields": { "name": "Bread Ww Cluster", "price": 450, "category": 10 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 2,
+    "fields": { "name": "Juice - Mango", "price": 141, "category": 5 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 3,
+    "fields": { "name": "Oil - Olive", "price": 342, "category": 4 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 4,
+    "fields": {
+      "name": "Whmis Spray Bottle Graduated",
+      "price": 128,
+      "category": 2
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 5,
+    "fields": {
+      "name": "Shrimp - 16/20, Iqf, Shell On",
+      "price": 428,
+      "category": 5
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 6,
+    "fields": { "name": "Beef Wellington", "price": 439, "category": 10 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 7,
+    "fields": {
+      "name": "Blouse / Shirt / Sweater",
+      "price": 296,
+      "category": 4
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 8,
+    "fields": { "name": "Beef - Kobe Striploin", "price": 225, "category": 1 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 9,
+    "fields": {
+      "name": "Bread - Italian Sesame Poly",
+      "price": 251,
+      "category": 4
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 10,
+    "fields": { "name": "Onion - Dried", "price": 262, "category": 8 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 11,
+    "fields": {
+      "name": "Truffle - Whole Black Peeled",
+      "price": 438,
+      "category": 8
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 12,
+    "fields": { "name": "Cookie - Oatmeal", "price": 464, "category": 5 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 13,
+    "fields": {
+      "name": "Wine - Fat Bastard Merlot",
+      "price": 483,
+      "category": 9
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 14,
+    "fields": {
+      "name": "Nantucket - Kiwi Berry Cktl.",
+      "price": 154,
+      "category": 4
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 15,
+    "fields": {
+      "name": "Coffee Beans - Chocolate",
+      "price": 150,
+      "category": 2
+    }
+  },
+  {
+    "model": "rms.table",
+    "pk": 1,
+    "fields": { "number": 1, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 2,
+    "fields": { "number": 2, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 3,
+    "fields": { "number": 3, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 4,
+    "fields": { "number": 4, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 5,
+    "fields": { "number": 5, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 6,
+    "fields": { "number": 6, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 7,
+    "fields": { "number": 7, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 8,
+    "fields": { "number": 8, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 9,
+    "fields": { "number": 9, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 10,
+    "fields": { "number": 10, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 11,
+    "fields": { "number": 1, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 12,
+    "fields": { "number": 2, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 13,
+    "fields": { "number": 3, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 14,
+    "fields": { "number": 4, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 15,
+    "fields": { "number": 5, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 16,
+    "fields": { "number": 6, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 17,
+    "fields": { "number": 7, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 18,
+    "fields": { "number": 8, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 19,
+    "fields": { "number": 9, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 20,
+    "fields": { "number": 10, "available": true }
+  },
+  {
+    "model": "rms.order",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "total_price": 500,
+      "status": "P",
+      "payment_status": "U"
+    }
+  },
+  {
+    "model": "rms.order",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "total_price": 100,
+      "status": "P",
+      "payment_status": "U"
+    }
+  },
+  {
+    "model": "rms.order",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "total_price": 600,
+      "status": "P",
+      "payment_status": "U"
+    }
+  },
+  { "model": "rms.orderitem", "pk": 1, "fields": { "food": 3, "order": 1 } },
+  { "model": "rms.orderitem", "pk": 2, "fields": { "food": 9, "order": 3 } },
+  { "model": "rms.orderitem", "pk": 3, "fields": { "food": 7, "order": 3 } }
+]

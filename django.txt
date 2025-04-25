@@ -47,43 +47,8 @@ pip install python-dotenv
 pip freeze > requirements.txt
 pip install -r requirements.txt
 
-# Run django server
-python3 manage.py runserver
-
-# open python shell
-python3 manage.py shell 
-
-# for import the Model name
-from base.models import Model_name  # here model name is todolist
-
-# show all the data of a model/table
-Model_name.objects.all()
-
-# create data in a model/table
-Model_name.objects.create(field1='value1',field2='value2')
-
-# show value of the data of a model/table 
-Model_name.objects.values()
-
-# fetch single data
-a = Model_name.objects.get(id = 1)
-print(a.title)
-
-# Update data
-a.field1 = 'new_value'
-a.save()
-
-# Delete
-a.delete()
-
-# filter data
-Model_name.objects.filter(field1='value1', ......)
-
-# count the number of all data
-Model_name.objects.all().count()
-
-# count the number of specific data
-Model_name.objects.filter(is_completed = True).count()
+# psycopg2-binary package
+pip install psycopg2-binary
 
 # create superuser
 python3 manage.py createsuperuser
@@ -91,4 +56,11 @@ python3 manage.py createsuperuser
 # register models in admin
 admin.site.register(todolist)
 
+# Run django server
+python3 manage.py runserver
 
+# To save all dumpdata
+python manage.py dumbdata app_name > create_file_name [Example python manage.py dumpdata rms > backup.json]
+
+# To save project all data
+python manage.py dumpdata > create_file_name [Example python manage.py dumpdata > back.json]

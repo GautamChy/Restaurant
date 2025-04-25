@@ -1,0 +1,276 @@
+[
+  { "model": "rms.category", "pk": 1, "fields": { "name": "Veal - Knuckle" } },
+  {
+    "model": "rms.category",
+    "pk": 2,
+    "fields": { "name": "Mushroom - Crimini" }
+  },
+  { "model": "rms.category", "pk": 3, "fields": { "name": "Onions - Pearl" } },
+  {
+    "model": "rms.category",
+    "pk": 4,
+    "fields": { "name": "Hold Up Tool Storage Rack" }
+  },
+  {
+    "model": "rms.category",
+    "pk": 5,
+    "fields": { "name": "Cheese - Cheddar, Mild" }
+  },
+  { "model": "rms.category", "pk": 6, "fields": { "name": "Strawberries" } },
+  { "model": "rms.category", "pk": 7, "fields": { "name": "Juice - Mango" } },
+  {
+    "model": "rms.category",
+    "pk": 8,
+    "fields": { "name": "Salmon - Sockeye Raw" }
+  },
+  {
+    "model": "rms.category",
+    "pk": 9,
+    "fields": { "name": "Puree - Blackcurrant" }
+  },
+  {
+    "model": "rms.category",
+    "pk": 10,
+    "fields": { "name": "Mushroom - Chanterelle, Dry" }
+  },
+  {
+    "model": "rms.food",
+    "pk": 1,
+    "fields": { "name": "Bread Ww Cluster", "price": 450, "category": 10 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 2,
+    "fields": { "name": "Juice - Mango", "price": 141, "category": 5 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 3,
+    "fields": { "name": "Oil - Olive", "price": 342, "category": 4 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 4,
+    "fields": {
+      "name": "Whmis Spray Bottle Graduated",
+      "price": 128,
+      "category": 2
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 5,
+    "fields": {
+      "name": "Shrimp - 16/20, Iqf, Shell On",
+      "price": 428,
+      "category": 5
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 6,
+    "fields": { "name": "Beef Wellington", "price": 439, "category": 10 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 7,
+    "fields": {
+      "name": "Blouse / Shirt / Sweater",
+      "price": 296,
+      "category": 4
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 8,
+    "fields": { "name": "Beef - Kobe Striploin", "price": 225, "category": 1 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 9,
+    "fields": {
+      "name": "Bread - Italian Sesame Poly",
+      "price": 251,
+      "category": 4
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 10,
+    "fields": { "name": "Onion - Dried", "price": 262, "category": 8 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 11,
+    "fields": {
+      "name": "Truffle - Whole Black Peeled",
+      "price": 438,
+      "category": 8
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 12,
+    "fields": { "name": "Cookie - Oatmeal", "price": 464, "category": 5 }
+  },
+  {
+    "model": "rms.food",
+    "pk": 13,
+    "fields": {
+      "name": "Wine - Fat Bastard Merlot",
+      "price": 483,
+      "category": 9
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 14,
+    "fields": {
+      "name": "Nantucket - Kiwi Berry Cktl.",
+      "price": 154,
+      "category": 4
+    }
+  },
+  {
+    "model": "rms.food",
+    "pk": 15,
+    "fields": {
+      "name": "Coffee Beans - Chocolate",
+      "price": 150,
+      "category": 2
+    }
+  },
+  {
+    "model": "rms.table",
+    "pk": 1,
+    "fields": { "number": 1, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 2,
+    "fields": { "number": 2, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 3,
+    "fields": { "number": 3, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 4,
+    "fields": { "number": 4, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 5,
+    "fields": { "number": 5, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 6,
+    "fields": { "number": 6, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 7,
+    "fields": { "number": 7, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 8,
+    "fields": { "number": 8, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 9,
+    "fields": { "number": 9, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 10,
+    "fields": { "number": 10, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 11,
+    "fields": { "number": 1, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 12,
+    "fields": { "number": 2, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 13,
+    "fields": { "number": 3, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 14,
+    "fields": { "number": 4, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 15,
+    "fields": { "number": 5, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 16,
+    "fields": { "number": 6, "available": false }
+  },
+  {
+    "model": "rms.table",
+    "pk": 17,
+    "fields": { "number": 7, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 18,
+    "fields": { "number": 8, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 19,
+    "fields": { "number": 9, "available": true }
+  },
+  {
+    "model": "rms.table",
+    "pk": 20,
+    "fields": { "number": 10, "available": true }
+  },
+  {
+    "model": "rms.order",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "total_price": 500,
+      "status": "P",
+      "payment_status": "U"
+    }
+  },
+  {
+    "model": "rms.order",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "total_price": 100,
+      "status": "P",
+      "payment_status": "U"
+    }
+  },
+  {
+    "model": "rms.order",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "total_price": 600,
+      "status": "P",
+      "payment_status": "U"
+    }
+  },
+  { "model": "rms.orderitem", "pk": 1, "fields": { "food": 3, "order": 1 } },
+  { "model": "rms.orderitem", "pk": 2, "fields": { "food": 9, "order": 3 } },
+  { "model": "rms.orderitem", "pk": 3, "fields": { "food": 7, "order": 3 } }
+]
