@@ -1,0 +1,19 @@
+# Restframework 
+https://www.django-rest-framework.org/
+
+# To install restframework and add inside project setting INSTALLED APP i.e 'rest_framework',
+pip install djangorestframework
+
+# Create path inside project urls 
+path('api/v1/',include('app_name.urls'))
+
+# Install requests
+pip install request
+
+# Haamro data store vayeraw basey kaaa hunchha database vitra as a object,tyi object lai json format maa convert garna
+lai,haami object lai  API through send garnu parchha  Serialization use gareraw.
+
+
+
+
+
