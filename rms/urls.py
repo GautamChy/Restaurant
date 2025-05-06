@@ -1,5 +1,5 @@
 from django.urls import path,include
-from .views import *
+from .views import CategoryAPIView,FoodAPIViewset
 from rest_framework import routers 
 
 router = routers.DefaultRouter()

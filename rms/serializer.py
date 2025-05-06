@@ -1,20 +1,16 @@
 from rest_framework import serializers
 from .models import Category
 from .models import Food
-
+ 
 class CategorySerilizers(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = '__all__' # serialize all model field or attribute 
-        
-        #fields = ['id','name','field'] # serialize for id,name,field
-        #fields = ['name','field'] # serialize for name and field
-        #fields = ['id','name'] # serialize for id and name
-        #exclude = ['id'] # id will not serialize
+        # serialize all model field or attribute 
+        fields = '__all__' 
         
     def save(self,**kwargs):
         validated_data = (self.validated_data)
-        
+        # counting name (.count)
         category_count = self.Meta.model.objects.filter(name = validated_data.get('name')).count()
         if category_count > 0:
                 raise serializers.ValidationError({
@@ -32,13 +28,12 @@ class FoodSerilizers(serializers.ModelSerializer):
             queryset = Category.objects.all(),
             source = 'category'
         )
-        
         class Meta:
             model = Food
             fields = ['id','name','price','price_with_tax','category_id','category']
                                  
         def get_price_with_tax(self,food:Food):
-            return food.price*0.13 + food.price
+            return food.price*0.10 + food.price
                 
             
         

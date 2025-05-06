@@ -12,24 +12,23 @@ from rest_framework.generics import GenericAPIView,ListCreateAPIView,RetrieveUpd
 #from rest_framework import viewsets
 from rest_framework.viewsets import ModelViewSet
 from .models import Food
+from rest_framework.pagination import PageNumberPagination
+from rest_framework import filters
+from django_filters import rest_framework as filter
+from .filters import FoodFilter
 
-
-
-
-
-# Create your views here.
-
+# Create your views here
 class CategoryAPIView(ModelViewSet):
       queryset = Category.objects.all()
       serializer_class = CategorySerilizers
       
-        # overide to list inside ModelViewSet
+        # overide  list inside ModelViewSet
       def list(self,request):
           queryset = Category.objects.all()
           serializer = CategorySerilizers(queryset,many=True)
           return Response({'data':serializer.data})
         
-        #overide to destroy inside ModelViewSet
+        #overide  destroy inside ModelViewSet
       def destroy(self,request,id):
           category = get_object_or_404(Category,id=id)
           count = OrderItem.objects.filter(food__category = category).count()
@@ -43,8 +42,18 @@ class CategoryAPIView(ModelViewSet):
          },status=status.HTTP_204_NO_CONTENT)
           
 class FoodAPIViewset(ModelViewSet):
-      queryset = Food.objects.all()
+      # select_related work to reduce time.
+      queryset = Food.objects.select_related().all()
       serializer_class = FoodSerilizers
+      pagination_class = PageNumberPagination
+      filter_backends = [filters.SearchFilter,filter.DjangoFilterBackend]
+      search_fields = ('name',)
+      filterset_class = FoodFilter
+      
+      
+     
+      
+      
       
       
 
