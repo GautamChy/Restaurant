@@ -16,30 +16,42 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework import filters
 from django_filters import rest_framework as filter
 from .filters import FoodFilter
+from .filters import CategoryFilter
+from .models import Table
+from .serializer import TableSerializer
+from .permission import IsAuthenticatedOrReadonly
+#from rest_framework.permissions import IsAuthenticated,IsAuthenticatedOrReadOnly
+
 
 # Create your views here
 class CategoryAPIView(ModelViewSet):
       queryset = Category.objects.all()
       serializer_class = CategorySerilizers
+      pagination_class = PageNumberPagination
+      filter_backends = [filters.SearchFilter,filter.DjangoFilterBackend]
+      search_fields = ['name',]
+      filterset_class = CategoryFilter
+      permission_classes = [IsAuthenticatedOrReadonly]
+      
       
         # overide  list inside ModelViewSet
-      def list(self,request):
-          queryset = Category.objects.all()
-          serializer = CategorySerilizers(queryset,many=True)
-          return Response({'data':serializer.data})
+      # def list(self,request):
+      #     queryset = Category.objects.all()
+      #     serializer = CategorySerilizers(queryset,many=True)
+      #     return Response({'data':serializer.data})
         
-        #overide  destroy inside ModelViewSet
-      def destroy(self,request,id):
-          category = get_object_or_404(Category,id=id)
-          count = OrderItem.objects.filter(food__category = category).count()
-          if count > 0:
-            return Response({
-              "detail": "OrderItem with this category exist.This category cannot be deleted."
-            })
-          category.delete()
-          return Response({
-         "detail":"This category is deleted"
-         },status=status.HTTP_204_NO_CONTENT)
+      #   #overide  destroy inside ModelViewSet
+      # def destroy(self,request,id):
+      #     category = get_object_or_404(Category,id=id)
+      #     count = OrderItem.objects.filter(food__category = category).count()
+      #     if count > 0:
+      #       return Response({
+      #         "detail": "OrderItem with this category exist.This category cannot be deleted."
+      #       })
+      #     category.delete()
+      #     return Response({
+      #    "detail":"This category is deleted"
+      #    },status=status.HTTP_204_NO_CONTENT)
           
 class FoodAPIViewset(ModelViewSet):
       # select_related work to reduce time.
@@ -49,7 +61,20 @@ class FoodAPIViewset(ModelViewSet):
       filter_backends = [filters.SearchFilter,filter.DjangoFilterBackend]
       search_fields = ('name',)
       filterset_class = FoodFilter
+      permission_classes = [IsAuthenticatedOrReadonly]
       
+class TableAPIViewset(ModelViewSet):
+      queryset = Table.objects.all()
+      serializer_class = TableSerializer
+      pagination_class = PageNumberPagination
+      filter_backends = [filters.SearchFilter]
+      search_fields =['id','number','available']
+      permission_classes = [IsAuthenticatedOrReadonly]
+     
+      
+      
+      
+
       
      
       

@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Category
 from .models import Food
+from .models import Table
  
 class CategorySerilizers(serializers.ModelSerializer):
     class Meta:
@@ -34,6 +35,14 @@ class FoodSerilizers(serializers.ModelSerializer):
                                  
         def get_price_with_tax(self,food:Food):
             return food.price*0.10 + food.price
+        
+class TableSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Table
+        fields = ['id','number','available']
+        
+    
+   
                 
             
         
