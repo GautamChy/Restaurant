@@ -43,11 +43,13 @@ INSTALLED_APPS = [
     'rms',
     'core',
     
+    
     'rest_framework',
     "debug_toolbar",
     'django_filters',
     
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'drf_spectacular',
     
     
 ]
@@ -90,7 +92,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'rms',
+        'NAME': 'res',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': 'localhost',
@@ -150,7 +152,23 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+        
+        
        
     ]
 }
 
+AUTH_USER_MODEL = 'core.User'
+
+REST_FRAMEWORK = {
+    # YOUR SETTINGS
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'RMS API',
+    'DESCRIPTION': 'This is Restaurent Management System',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}

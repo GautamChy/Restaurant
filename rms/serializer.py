@@ -2,6 +2,8 @@ from rest_framework import serializers
 from .models import Category
 from .models import Food
 from .models import Table
+from .models import Order
+from .models import OrderItem
  
 class CategorySerilizers(serializers.ModelSerializer):
     class Meta:
@@ -40,6 +42,37 @@ class TableSerializer(serializers.ModelSerializer):
     class Meta:
         model = Table
         fields = ['id','number','available']
+        
+class OrderItemSerializer(serializers.ModelSerializer):
+    food_id = serializers.PrimaryKeyRelatedField(
+        queryset = Food.objects.all(),
+        source = 'food'
+    )
+    food = serializers.StringRelatedField()
+    class Meta:
+        model = OrderItem
+        fields =['food_id','food']
+        
+class OrderSerializer(serializers.ModelSerializer):
+    # Its hidden from the user input but required in the model
+    user = serializers.HiddenField(default = serializers.CurrentUserDefault())
+    # Calling OrderItemSerializer(items)
+    items = OrderItemSerializer(many=True)
+    status = serializers.CharField(read_only=True)
+    payment_status = serializers.CharField(read_only=True)
+    class Meta:
+        model = Order
+        fields = ['user','total_price','status','payment_status','items']
+        
+        #Override create function
+    def create(self,validated_data):
+        items_data = validated_data.pop('items')
+        order = Order.objects.create(**validated_data)
+        
+        for item in items_data:
+            OrderItem.objects.create(order=order,food=item['food'])
+        return order
+            
         
     
    
